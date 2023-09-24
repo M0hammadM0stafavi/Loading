@@ -1,2 +1,24 @@
 @charset "UTF8";
 @import "/css/cssreset.css";
+
+.Loading{
+    width: 200px;
+    height: 200px;
+    border: 20px solid #efefef;
+    margin: 190px auto 0 auto;
+    border-radius: 50%;
+    border-top-color: red;
+    animation: loading 3s linear infinite;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
